@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title> Content Manager </title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div>
+      <% if session[:message] %>
+        <p> <%= session.delete(:success) %> </p>
+      <% end %>
+    </div>
+    <main>
+      <%= yield %>
+    </main>
+  </body>
+</html>

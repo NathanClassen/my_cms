@@ -1,6 +1,5 @@
 ENV["RACK_ENV"] = "test"
 
-
 require "minitest/autorun"
 require "rack/test"
 
@@ -55,6 +54,3 @@ class CMSTest < Minitest::Test
     assert_includes last_response.body, "new content"
   end
 end
-
-
-
